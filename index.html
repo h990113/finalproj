@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <title>投手丘與運動傷害的關聯--日本職棒的美式風潮</title>
+</head>
+<body>
+  <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="p0">
+          <div class="head">
+            <div class="left"><h1 style="line-height: 1.5;"><strong>投手丘與運動傷害</strong><br>--日本的美式風潮</h1> </div> 
+            <div class="right"></div>
+          </div>
+        </div>
+        <div class="swiper-slide" id="p1">
+          <div class="mid">
+            <h1>神宮球場的使用時間</h1>
+                <div class="part1"><h3>大學</h3><p>六大學：春季：3月~5月&nbsp;秋季：9月~11月<br>大學選手權：6月&nbsp;神宮大會：11月</p></div>
+                <div class="part2"><h3>高中</h3><p>高校選手權：7月&nbsp;神宮大會：11月&nbsp;秋季大會</p></div>
+                <div class="part3"><h3>其他</h3><p>日本職業棒球：3月~10月&nbsp;社會人：3月等等<br>除棒球之外還有煙火、球迷感謝祭及演唱會等</p></div>
+          </div>
+        </div>
+  	    <div class="swiper-slide" id="p2">
+          <div class="swiper hor">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><div class="hor"><h2>山本由伸分解動作1(可滑鼠拉動)</h2><img src="assets/show1.jfif" alt=""></div></div>
+              <div class="swiper-slide"><div class="hor"><h2>山本由伸分解動作2</h2><img src="assets/show2.jfif" alt=""></div></div>
+              <div class="swiper-slide"><div class="hor"><h2>山本由伸分解動作3</h2><img src="assets/show3.jfif" alt=""></div></div>
+              <div class="swiper-slide"><div class="hor"><h2>山本由伸分解動作4</h2><img src="assets/show4.jfif" alt=""></div></div>
+              <div class="swiper-slide"><div class="hor"><h2>山本由伸分解動作5</h2><img src="assets/show5.jfif" alt=""></div></div>
+            </div>
+          </div>
+        </div>
+  	    <div class="swiper-slide" id="p3">
+          <div class="last">
+            <div class="left">
+              <h2>日本職棒的投手丘問題</h2>
+              <ul>
+                <li>1.軟硬不一致</li>
+                <li>2.部分球場使用過於密集</li>
+                <li>3.造成受傷情形極多</li>
+                <li>4.選手成績差異</li>
+                <li>5.日式與美式之差</li>
+              </ul>
+            </div>
+            <div class="right">
+              <h2>參考資料</h2>
+              <ul>
+                <li><a href="https://column.sp.baseball.findfriends.jp/?pid=column_detail&id=004-20210405-01" target="_blank" rel="noopener noreferrer">1.野球コラム</a></li>
+                <li><a href="https://twitter.com/jingu_stadiumpr" target="_blank" rel="noopener noreferrer">2.明治神宮野球場（公式）</a></li>
+                <li><a href="https://wpb.shueisha.co.jp/news/sports/2019/03/29/108502/" target="_blank" rel="noopener noreferrer">3.週プレNEWS</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script> 
+    <script>
+      var swiper = new Swiper(".hor", {
+        slidesPerView: 1,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },})
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        }
+      });
+    </script>
+</body>
+</html>
